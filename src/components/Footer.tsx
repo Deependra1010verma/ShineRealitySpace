@@ -13,7 +13,7 @@ const Footer = () => {
                             src={logo}
                             alt="Shine Reality Space"
                             width={150}
-                            height={50}
+                            height={120}
                             className={styles.logoImage}
                         />
                     </Link>
@@ -35,10 +35,10 @@ const Footer = () => {
                 <div className={styles.column}>
                     <h4 className={styles.heading}>Contact Us</h4>
                     <address className={styles.address}>
-                        <p>123 Business Park, Suite 100</p>
-                        <p>Metro City, ST 12345</p>
-                        <p><a href="tel:+1234567890" className={styles.link}>+1 (234) 567-890</a></p>
-                        <p><a href="mailto:info@shinereality.com" className={styles.link}>info@shinereality.com</a></p>
+                        <p>E-48, Block E, Third Floor</p>
+                        <p>Sector-3, Noida 201301</p>
+                        <p><a href="tel:+918368381334" className={styles.link}>+91 8368381334</a></p>
+                        <p><a href="mailto:shinerealtyspace24@gmail.com" className={styles.link}>shinerealtyspace24@gmail.com</a></p>
                     </address>
                 </div>
 

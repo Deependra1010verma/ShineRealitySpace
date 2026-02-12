@@ -13,7 +13,7 @@ const Contact = () => {
                             <span className={styles.icon}>📍</span>
                             <div>
                                 <h3 className={styles.label}>Office Address</h3>
-                                <p>123 Business Park, Suite 100<br />Metro City, ST 12345</p>
+                                <p>E-48, Block E, Third Floor<br />Sector-3, Noida 201301</p>
                             </div>
                         </div>
 
@@ -21,7 +21,7 @@ const Contact = () => {
                             <span className={styles.icon}>📞</span>
                             <div>
                                 <h3 className={styles.label}>Phone Number</h3>
-                                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                                <p><a href="tel:+918368381334">+91 8368381334</a></p>
                             </div>
                         </div>
 
@@ -29,7 +29,7 @@ const Contact = () => {
                             <span className={styles.icon}>✉️</span>
                             <div>
                                 <h3 className={styles.label}>Email Address</h3>
-                                <p><a href="mailto:info@shinereality.com">info@shinereality.com</a></p>
+                                <p><a href="mailto:shinerealtyspace24@gmail.com">shinerealtyspace24@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
