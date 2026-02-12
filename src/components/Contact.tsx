@@ -53,9 +53,6 @@ const Contact = () => {
                             referrerPolicy="no-referrer-when-downgrade"
                             title="Google Maps Location"
                         ></iframe>
-                        <div className={styles.mapOverlay}>
-                            <span>View on Google Maps</span>
-                        </div>
                     </a>
                 </div>
             </div>
