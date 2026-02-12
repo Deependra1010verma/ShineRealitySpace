@@ -1,3 +1,5 @@
+import Image from "next/image";
+import aboutImg from "../assets/AboutUs.png";
 import styles from "./About.module.css";
 
 const About = () => {
@@ -30,10 +32,12 @@ const About = () => {
                     </div>
                 </div>
                 <div className={styles.imageWrapper}>
-                    <div className={styles.imagePlaceholder}>
-                        {/* Placeholder for About Image - could lead to a real image later */}
-                        <span>About Us Image</span>
-                    </div>
+                    <Image
+                        src={aboutImg}
+                        alt="About Shine Reality Space"
+                        className={styles.image}
+                        placeholder="blur"
+                    />
                 </div>
             </div>
         </section>
