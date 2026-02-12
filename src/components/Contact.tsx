@@ -36,19 +36,27 @@ const Contact = () => {
                 </div>
 
                 <div className={styles.map}>
-                    {/* Google Markets Embed Placeholder */}
-                    <div className={styles.mapPlaceholder}>
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=E-48,+Block+E,+Sector-3,+Noida+201301"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.mapLink}
+                        title="Click to open in Google Maps"
+                    >
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184126272442!2d-73.9854283234255!3d40.74844057138814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1709664551381!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.580630733568!2d77.31976697621455!3d28.58235288636195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce45f6578054b%3A0x6b87640245050df5!2sE-48%2C%20Block%20E%2C%20Sector%203%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1709664551381!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
-                            style={{ border: 0 }}
+                            style={{ border: 0, pointerEvents: "none" }}
                             allowFullScreen={true}
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             title="Google Maps Location"
                         ></iframe>
-                    </div>
+                        <div className={styles.mapOverlay}>
+                            <span>View on Google Maps</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
