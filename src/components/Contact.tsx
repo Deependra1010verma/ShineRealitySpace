@@ -22,6 +22,7 @@ const Contact = () => {
                             <div>
                                 <h3 className={styles.label}>Phone Number</h3>
                                 <p><a href="tel:+918368381334">+91 8368381334</a></p>
+                                <p><a href="tel:+919455041161">+91 9455041161</a></p>
                             </div>
                         </div>
 

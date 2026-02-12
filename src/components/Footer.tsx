@@ -38,6 +38,7 @@ const Footer = () => {
                         <p>E-48, Block E, Third Floor</p>
                         <p>Sector-3, Noida 201301</p>
                         <p><a href="tel:+918368381334" className={styles.link}>+91 8368381334</a></p>
+                        <p><a href="tel:+919455041161" className={styles.link}>+91 9455041161</a></p>
                         <p><a href="mailto:shinerealtyspace24@gmail.com" className={styles.link}>shinerealtyspace24@gmail.com</a></p>
                     </address>
                 </div>
