@@ -1,0 +1,135 @@
+.enquiry {
+    padding: 5rem 0;
+    background-color: var(--color-surface);
+}
+
+.enquiryContainer {
+    max-width: 800px;
+    /* Narrower container for form */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+}
+
+.formWrapper {
+    background-color: var(--color-background);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.input,
+.select,
+.textarea {
+    padding: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.textarea {
+    resize: vertical;
+}
+
+.submitBtn {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: var(--color-accent);
+}
+
+.whatsappContainer {
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.whatsappContainer p {
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+}
+
+.whatsappBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #25D366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsappBtn:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .formWrapper {
+        padding: 1.5rem;
+    }
+}
