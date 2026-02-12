@@ -38,7 +38,7 @@ const EnquiryForm = ({ onSuccess }: { onSuccess?: () => void }) => {
                     onChange={handleChange}
                     required
                     className={styles.input}
-                    placeholder="John Doe"
+                    placeholder="Full Name"
                 />
             </div>
 
@@ -53,7 +53,7 @@ const EnquiryForm = ({ onSuccess }: { onSuccess?: () => void }) => {
                         onChange={handleChange}
                         required
                         className={styles.input}
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+919876543210"
                     />
                 </div>
 
@@ -67,7 +67,7 @@ const EnquiryForm = ({ onSuccess }: { onSuccess?: () => void }) => {
                         onChange={handleChange}
                         required
                         className={styles.input}
-                        placeholder="john@example.com"
+                        placeholder="shine@gmail.com"
                     />
                 </div>
             </div>

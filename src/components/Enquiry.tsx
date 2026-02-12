@@ -18,7 +18,7 @@ const Enquiry = () => {
                     <div className={styles.whatsappContainer}>
                         <p>Or chat with us directly:</p>
                         <a
-                            href="https://wa.me/1234567890"
+                            href="https://wa.me/918368381334"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.whatsappBtn}
