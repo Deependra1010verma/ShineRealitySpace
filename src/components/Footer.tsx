@@ -11,7 +11,7 @@ const Footer = () => {
                     <Link href="/" className={styles.logo}>
                         <Image
                             src={logo}
-                            alt="Shine Realty Space"
+                            alt="Shine Reality Space"
                             width={150}
                             height={120}
                             className={styles.logoImage}
@@ -92,7 +92,7 @@ const Footer = () => {
 
             <div className={styles.copyright}>
                 <div className="container">
-                    <p>© 2026 Shine Realty Space. All Rights Reserved.</p>
+                    <p>© 2026 Shine Reality Space. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>

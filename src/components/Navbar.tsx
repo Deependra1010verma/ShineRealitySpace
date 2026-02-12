@@ -19,7 +19,7 @@ const Navbar = () => {
                 <Link href="/" className={styles.logo}>
                     <Image
                         src={logo}
-                        alt="Shine Realty Space"
+                        alt="Shine Reality Space"
                         width={180}
                         height={60}
                         className={styles.logoImage}

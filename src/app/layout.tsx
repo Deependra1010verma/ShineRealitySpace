@@ -16,8 +16,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Shine Realty Space | Premium Office & Industrial Spaces",
-  description: "Find premium office and industrial spaces for lease with Shine Realty Space. Expert commercial real estate solutions.",
+  title: "Shine Reality Space | Premium Office & Industrial Spaces",
+  description: "Find premium office and industrial spaces for lease with Shine Reality Space. Expert commercial real estate solutions.",
 };
 
 export default function RootLayout({
