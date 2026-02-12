@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../assets/logo.jpeg";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
             <div className={`container ${styles.navContainer}`}>
                 <Link href="/" className={styles.logo}>
                     <Image
-                        src="/logo.jpg"
+                        src={logo}
                         alt="Shine Reality Space"
                         width={180}
                         height={60}
@@ -45,12 +46,12 @@ const Navbar = () => {
                     </li>
                     <li className={styles.navItem}>
                         <Link href="#about" className={styles.navLink} onClick={toggleMenu}>
-                            About
+                            About Us
                         </Link>
                     </li>
                     <li className={styles.navItem}>
                         <Link href="#enquiry" className={styles.navLink} onClick={toggleMenu}>
-                            Enquiry
+                            Enquiry now
                         </Link>
                     </li>
                     <li className={styles.navItem}>

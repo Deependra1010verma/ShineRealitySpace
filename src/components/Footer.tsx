@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../assets/logo.jpeg";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
                 <div className={styles.column}>
                     <Link href="/" className={styles.logo}>
                         <Image
-                            src="/logo.jpg"
+                            src={logo}
                             alt="Shine Reality Space"
                             width={150}
                             height={50}
