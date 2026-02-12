@@ -44,12 +44,48 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.column}>
-                    <h4 className={styles.heading}>Follow Us</h4>
+                    <h4 className={styles.heading}>Share & Follow</h4>
                     <div className={styles.socials}>
-                        {/* Social Icons placeholders */}
-                        <a href="#" className={styles.socialLink}>FB</a>
-                        <a href="#" className={styles.socialLink}>IN</a>
-                        <a href="#" className={styles.socialLink}>TW</a>
+                        <a
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://shinerealityspace.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.socialLink}
+                            aria-label="Share on Facebook"
+                            title="Share on Facebook"
+                        >
+                            FB
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/sharing/share-offsite/?url=https://shinerealityspace.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.socialLink}
+                            aria-label="Share on LinkedIn"
+                            title="Share on LinkedIn"
+                        >
+                            IN
+                        </a>
+                        <a
+                            href="https://twitter.com/intent/tweet?url=https://shinerealityspace.com&text=Check+out+Shine+Reality+Space+for+premium+commercial+properties!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.socialLink}
+                            aria-label="Share on Twitter"
+                            title="Share on Twitter"
+                        >
+                            X
+                        </a>
+                        <a
+                            href="https://wa.me/?text=Check+out+Shine+Reality+Space+for+premium+commercial+properties!+https://shinerealityspace.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.socialLink}
+                            aria-label="Share on WhatsApp"
+                            title="Share on WhatsApp"
+                        >
+                            WA
+                        </a>
                     </div>
                 </div>
             </div>
