@@ -5,10 +5,10 @@ const About = () => {
         <section id="about" className={styles.about}>
             <div className={`container ${styles.aboutContainer}`}>
                 <div className={styles.content}>
-                    <h2 className={styles.heading}>About Shine Reality Space</h2>
+                    <h2 className={styles.heading}>About Shine Realty Space</h2>
                     <p className={styles.subheading}>Your Trusted Partner in Commercial Leasing</p>
                     <p className={styles.text}>
-                        Shine Reality Space is a premier commercial real estate leasing company dedicated to connecting businesses with their ideal workspaces. With years of expertise in the property market, we specialize in providing top-tier office and industrial spaces that foster growth and innovation.
+                        Shine Realty Space is a premier commercial real estate leasing company dedicated to connecting businesses with their ideal workspaces. With years of expertise in the property market, we specialize in providing top-tier office and industrial spaces that foster growth and innovation.
                     </p>
                     <p className={styles.text}>
                         Our mission is to simplify the leasing process while offering transparent, value-driven solutions tailored to your unique business needs. Whether you're a startup looking for a modern office or an enterprise seeking a large-scale industrial warehouse, we have the perfect space for you.
