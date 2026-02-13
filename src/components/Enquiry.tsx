@@ -13,7 +13,7 @@ const Enquiry = () => {
                 </div>
 
                 <div className={styles.formWrapper}>
-                    <EnquiryForm />
+                    <EnquiryForm source="Enquiry Section" />
 
                     <div className={styles.whatsappContainer}>
                         <p>Or chat with us directly:</p>

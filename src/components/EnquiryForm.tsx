@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import styles from "./EnquiryForm.module.css";
 
-const EnquiryForm = ({ onSuccess }: { onSuccess?: () => void }) => {
+const EnquiryForm = ({ onSuccess, source = "Website" }: { onSuccess?: () => void, source?: string }) => {
     const [formData, setFormData] = useState({
         fullName: "",
         phone: "",
@@ -11,19 +12,52 @@ const EnquiryForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         requirement: "",
         message: ""
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission logic here (e.g., API call)
-        console.log("Form submitted:", formData);
-        alert("Thank you for your enquiry. We will contact you shortly.");
-        setFormData({ fullName: "", phone: "", email: "", requirement: "", message: "" });
-        if (onSuccess) onSuccess();
+        setIsSubmitting(true);
+
+        const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+        const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+        const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+        if (!serviceId || !templateId || !publicKey || serviceId === "YOUR_SERVICE_ID") {
+            alert("EmailJS is not configured. Please check your .env.local file.");
+            console.error("Missing EmailJS environment variables");
+            setIsSubmitting(false);
+            return;
+        }
+
+        try {
+            // Prepare template parameters to match your EmailJS template
+            const templateParams = {
+                fullName: formData.fullName,
+                phone: formData.phone,
+                email: formData.email,
+                requirement: formData.requirement,
+                message: formData.message,
+                source: source,
+                to_name: "Admin", // Or whoever receives the email
+            };
+
+            await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+            console.log("Form submitted via EmailJS:", formData);
+            alert("Thank you for your enquiry. We will contact you shortly.");
+            setFormData({ fullName: "", phone: "", email: "", requirement: "", message: "" });
+            if (onSuccess) onSuccess();
+        } catch (error) {
+            console.error("EmailJS Error:", error);
+            alert("Failed to send enquiry. Please try again later or contact us via WhatsApp.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -104,8 +138,8 @@ const EnquiryForm = ({ onSuccess }: { onSuccess?: () => void }) => {
                 ></textarea>
             </div>
 
-            <button type="submit" className={styles.submitBtn}>
-                Submit Enquiry
+            <button type="submit" className={styles.submitBtn} disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Submit Enquiry"}
             </button>
         </form>
     );
